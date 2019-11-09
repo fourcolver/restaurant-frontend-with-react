@@ -1,0 +1,45 @@
+
+.top-nav {
+  position: relative;
+  z-index: 1060;
+  height: 60px !important;
+
+  .navbar.navbar-expand {
+    padding-right: 100px !important;
+
+    .navbar-brand {
+      margin-left: 100px;
+
+      .top-nav-logo {
+        height: 45px;
+        width: 45px;
+        object-fit: cover;
+      }
+    }
+
+    .navbar-nav {
+      .nav-item {
+        margin: 0;
+
+        > a {
+          padding: 0;
+          color: #274BF0;
+
+          :hover {
+            color: #274BF0;
+          }
+
+          img {
+            padding: 1px;
+            border: 1px solid #274BF0;
+            border-radius: 50%;
+          }
+        }
+
+        > a:hover:before {
+          background: transparent;
+        }
+      }
+    }
+  }
+}

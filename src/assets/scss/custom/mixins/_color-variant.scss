@@ -1,0 +1,17 @@
+
+@mixin color-variant($parent, $color) {
+    #{$parent} {
+        color: $color !important;
+    }
+    a#{$parent},
+    button#{$parent} {
+        @include hover-focus {
+            color: darken($color, 10%) !important;
+        }
+    }
+    a.nav-link#{$parent} {
+        &:before {
+            background: $color;
+        }
+    }
+}

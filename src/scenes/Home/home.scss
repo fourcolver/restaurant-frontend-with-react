@@ -1,0 +1,19 @@
+.home-container {
+  position: relative;
+
+  .scenes-container {
+    padding-top: 70px;
+    padding-bottom: 100px;
+    padding-right: 100px;
+
+    min-height: 795px;
+
+    @media only screen and (min-width: 768px) {
+      padding-left: 217px;
+    }
+
+    &.no-sidebar {
+      padding-left: 100px;
+    }
+  }
+}

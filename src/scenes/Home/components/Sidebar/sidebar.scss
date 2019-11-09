@@ -1,0 +1,102 @@
+.list-group-item.active {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #274bf0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+
+    /* Our sidebar item styling */
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.2s;
+  }
+
+  /* Change color on hover */
+  .bm-item:hover {
+    color: white;
+  }
+
+  /* The rest copied directly from react-burger-menu docs */
+
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: relative;
+    width: 30px;
+    height: 25px;
+    left: 25px;
+    top: 10px;
+  }
+
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #373a47;
+  }
+
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+
+  /* General sidebar styles */
+  .bm-menu {
+    background: #f7f8fa;
+    font-size: 1.15em;
+  }
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #f7f8fa;
+  }
+
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+  }
+
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .bm-menu-wrap {
+    width: 200px;
+    z-index: 1040 !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .bm-burger-button {
+    display: none;
+  }
+
+  .bm-morph-shape {
+    display: none;
+  }
+
+  .bm-menu-wrap {
+    position: absolute !important;
+    transform: translate3d(-0%, 0px, 0px) !important;
+    width: unset !important;
+    margin: 70px auto auto 100px;
+    z-index: 1040 !important;
+
+    > .bm-menu {
+      box-shadow: none !important;
+    }
+  }
+
+  .sidebar-menu-container  {
+    min-height: calc(100vh - 230px);
+    height: calc(100% - 230px);
+  }
+}

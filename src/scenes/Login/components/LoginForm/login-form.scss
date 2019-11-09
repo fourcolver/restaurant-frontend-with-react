@@ -1,0 +1,31 @@
+.login-form {
+  .fb-login {
+    display: inline-block;
+    border: 1px outset #29487d;
+    border-radius: 5px;
+    background: #4267b2;
+    padding: 8px;
+    color: white;
+
+    &:hover {
+      background: #4267b2;
+      color: darken(white, 10%);
+      border: 1px outset #29487d;
+    }
+
+    &:active {
+      background-color: darken(#4267b2, 20%) !important;
+      border: 1px outset #29487d;
+      color: darken(white, 20%) !important;
+    }
+
+    > svg {
+      padding-right: 10px;
+      margin-right: 5px;
+      border-right: 1px solid white;
+      height: 20px;
+      position: relative;
+      top: -1px;
+    }
+  }
+}
